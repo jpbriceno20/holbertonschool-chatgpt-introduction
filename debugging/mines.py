@@ -43,7 +43,7 @@ class Minesweeper:
 
     def reveal(self, x, y):
         if self.revealed[y][x]:
-            return True  # ya estaba revelado
+            return True
 
         if (y * self.width + x) in self.mines:
             return False
